@@ -1,0 +1,14 @@
+﻿{
+  "name": "com.catnexu.stringiddrawer",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "unity"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "catnexu",
+    "email": "vitalygds@gmail.com"
+  },
+  "displayName": "String id drawer for Unity"
+}

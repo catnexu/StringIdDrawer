@@ -14,5 +14,8 @@
   "author": {
     "name": "catnexu",
     "email": "vitalygds@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/catnexu/StringIdDrawer.git"
   }
 }

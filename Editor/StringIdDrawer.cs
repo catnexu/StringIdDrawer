@@ -32,5 +32,9 @@ namespace StringIdDrawer.Editor
             property.stringValue = value;
             property.serializedObject.ApplyModifiedProperties();
         }
+
+        protected override Object GetObject(SerializedProperty property) => GetObject(property.stringValue);
+
+        protected virtual Object GetObject(string value) => null;
     }
 }

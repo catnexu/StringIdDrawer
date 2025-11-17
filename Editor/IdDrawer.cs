@@ -61,19 +61,16 @@ namespace StringIdDrawer.Editor
             }
         }
 
-        private void Callback(SerializedProperty property, string value)
-        {
-            OnCallback(property, value);
-            _getObjectTried = false;
-        }
-        
         protected abstract void OnCallback(SerializedProperty property, string value);
 
         protected abstract List<string> GetIds(SerializedProperty property);
 
-        protected virtual Object GetObject(SerializedProperty property)
+        protected virtual Object GetObject(SerializedProperty property) => null;
+
+        private void Callback(SerializedProperty property, string value)
         {
-            return null;
+            OnCallback(property, value);
+            _getObjectTried = false;
         }
     }
 }
